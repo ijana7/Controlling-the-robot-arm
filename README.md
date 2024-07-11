@@ -17,7 +17,7 @@
 
 ## Controlling the robot arm by Moveit and kinematics
 
- roslaunch moveit_pkg demo_gazebo.launch
+ ## roslaunch moveit_pkg demo_gazebo.launch
  
  <img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٦ ٤٠ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/93f2995b-cdad-4362-abc4-c4a44603d487">
 
