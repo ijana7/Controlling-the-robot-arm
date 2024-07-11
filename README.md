@@ -1,38 +1,26 @@
-<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ٢ ٢٩ ٠٢ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/16e66845-ac1c-491d-bee8-1ac6f35a7426"># Controlling-the-robot-arm
-Controlling the robot arm by joint_ state_publisher and Controlling the robot arm by Moveit and kinematics
+## Controlling the robot arm by joint_ state_publisher 
 
-Installing the package
-arduino_robot_arm
-- Add the “arduino_robot_arm” package to “src” folder
-	$ cd ~/catkin_ws/src
-	$ sudo apt install git
-	$ git clone https://github.com/smart-methods/arduino_robot_arm 
-- Install all the dependencies 
-	$ cd ~/catkin_ws
-	$ rosdep install --from-paths src --ignore-src -r -y
-	$ sudo apt-get install ros-noetic-moveit
-	$ sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
-	$ sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
-	$ sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
-Compil
-e the package
-$ catkin_make
+$ roslaunch robot_arm_pkg check_motors.launch
 
-<img width="1667" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ١١ ٤٢ ١٧ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/f00dae1d-47ae-4a9a-b589-197e6a432e29">
+<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٤ ٣٣ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/75d0f740-88b6-4151-b7c1-5d0966d13bf0">
 
-<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ١١ ٤٢ ٣٠ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/467053c4-c827-4d86-bcda-16b00bcbd359">
+$ roslaunch robot_arm_pkg check_motors_gazebo.launch
+
+<img width="1704" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٥ ٠١ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/650e21d9-4f94-48b5-aa87-c53c204fe181">
+
+$ rosrun robot_arm_pkg joint_states_to_gazebo.py
+
+<img width="1697" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٦ ٠٠ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/bc9270f9-f0a9-4795-ad20-493c77bc53f4">
 
 
-![Uploading ‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ١١.٤٣.٠٨ م.png…]()
+## Controlling the robot arm by Moveit and kinematics
 
-<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ١١ ٤٦ ١٥ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/55cba668-a32e-469b-a4f9-dfb450ae2369">
-
-![Uploading ‏لقطة الشاشة ١٤٤٦-٠١-٠٢ في ٢.٢٨.٣٧ م.png…]()
-
-
+ roslaunch moveit_pkg demo_gazebo.launch
+ 
+ <img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٦ ٤٠ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/93f2995b-cdad-4362-abc4-c4a44603d487">
 
 
+<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٦ ٤٩ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/0aa8693c-cb9c-4474-8cab-d3cff7e93a4a">
 
 
-
-
+<img width="1710" alt="‏لقطة الشاشة ١٤٤٦-٠١-٠٥ في ٧ ٥٦ ٥٩ م" src="https://github.com/ijana7/Controlling-the-robot-arm/assets/173642526/9006f901-7b71-4b36-946c-48f1a90be5e7">
