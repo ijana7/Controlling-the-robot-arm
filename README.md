@@ -1,4 +1,4 @@
-### Controlling the robot arm by joint_ state_publisher 
+## Controlling the robot arm by joint_ state_publisher 
 
 ## First we must follow these Commands
 
